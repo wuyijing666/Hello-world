@@ -5,14 +5,16 @@ using namespace std;
 
 int main()
 {
-    int n,s,v;
-    cin>>n;
-    for (;n<=10;n++)
-    {
-        s=n*n;
-        v=n*n*n;
-        cout << n << "\t" << s << "\t" << v <<endl;
-    }
+    int a,b,c,x,y,z;
+    cin>>x>>y;
+    a=x+y;
+    b=x*y;
+    c=x-y;
+    z=x/y;
+    cout << "+:" <<a<< endl;
+    cout << "*:" <<b<< endl;
+    cout << "-:" <<c<< endl;
+    cout << "/:" <<z<< endl;
     return 0;
 }
 
