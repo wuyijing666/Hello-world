@@ -25,34 +25,15 @@ using namespace std;
 
 int main()
 {
-    cout << "1 2 3 4" ;
+     cout << "1 2 3 4" <<endl;
+     cout << "1 " << "2 " << "3 " << "4 " <<endl;
+     cout << "1 ";
+     cout << "2 ";
+     cout << "3 ";
+     cout << "4\n";
     return 0;
 }
 
-
-#include <iostream>
-
-using namespace std;
-
-int main()
-{
-    cout << "1 " << "2 " << "3 " << "4 ";
-    return 0;
-}
-
-
- #include <iostream>
-
-using namespace std;
-
-int main()
-{
-    cout << "1 ";
-    cout << "2 ";
-    cout << "3 ";
-    cout << "4\n";
-    return 0;
-}
 
 (2.18)
 #include <iostream>
@@ -138,72 +119,20 @@ int main()
 using namespace std;
 
 int main()
-{
-    cout << "*********" <<endl;
-    cout << "*       *" <<endl;
-    cout << "*       *" <<endl;
-    cout << "*       *" <<endl;
-    cout << "*       *" <<endl;
-    cout << "*       *" <<endl;
-    cout << "*       *" <<endl;
-    cout << "*       *" <<endl;
-    cout << "*********" <<endl;
+    {
+        cout << "*********     ***       *         *" << endl;
+        cout << "*       *    *   *     ***       *  *" << endl;
+        cout << "*       *   *     *   *****     *    *" << endl;
+        cout << "*       *   *     *     *      *      *" << endl;
+        cout << "*       *   *     *     *     *        *" << endl;
+        cout << "*       *   *     *     *      *      *" << endl;
+        cout << "*       *   *     *     *       *    *" << endl;
+        cout << "*       *    *   *      *        *  *" << endl;
+        cout << "*********     ***       *          *" << endl;
+
     return 0;
-}
+    }
 
-#include <iostream>
-
-using namespace std;
-
-int main()
-{
-    cout << "   ***   " <<endl;
-    cout << " *     * " <<endl;
-    cout << "*       *" <<endl;
-    cout << "*       *" <<endl;
-    cout << "*       *" <<endl;
-    cout << "*       *" <<endl;
-    cout << "*       *" <<endl;
-    cout << " *     * " <<endl;
-    cout << "   ***   " <<endl;
-    return 0;
-}
-
-#include <iostream>
-
-using namespace std;
-
-int main()
-{
-    cout << "  *  " <<endl;
-    cout << " *** " <<endl;
-    cout << "*****" <<endl;
-    cout << "  *  " <<endl;
-    cout << "  *  " <<endl;
-    cout << "  *  " <<endl;
-    cout << "  *  " <<endl;
-    cout << "  *  " <<endl;
-    cout << "  *  " <<endl;
-    return 0;
-}
-
-#include <iostream>
-
-using namespace std;
-
-int main()
-{
-    cout << "    *    " <<endl;
-    cout << "   * *   " <<endl;
-    cout << "  *   *  " <<endl;
-    cout << " *     * " <<endl;
-    cout << "*       *" <<endl;
-    cout << " *     * " <<endl;
-    cout << "  *   *  " <<endl;
-    cout << "   * *   " <<endl;
-    cout << "    *    " <<endl;
-    return 0;
-}
 
 (2.23)
 #include <iostream>
@@ -290,6 +219,37 @@ int main()
     return 0;
 }
 
+(2.26)
+ #include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+    cout <<" * * * * * * * * "<<endl;
+    cout <<"  * * * * * * * *"<<endl;
+    cout <<" * * * * * * * * "<<endl;
+    cout <<"  * * * * * * * *"<<endl;
+    cout <<" * * * * * * * * "<<endl;
+    cout <<"  * * * * * * * *"<<endl;
+    cout <<" * * * * * * * * "<<endl;
+    cout <<"  * * * * * * * *"<<endl;
+
+
+    int i;
+    cin >> i;
+    for (i=1;i<=8;i++)
+    {
+        if(i%2==0)
+            cout << " * * * * * * * *\n" ;
+        else
+            cout << "* * * * * * * * \n" ;
+    }
+
+    return 0;
+}
+
 (2.27)
 #include <iostream>
 
@@ -338,3 +298,41 @@ int main()
     }
     return 0;
 }
+
+(2.30)
+#include <iostream>
+using namespace std ;
+int main ()
+{
+    double weight ,height;
+
+    double BIM;
+
+    cin >> weight >>height ;
+
+    BIM=weight / (height * height );
+
+    cout << "your BIM is  " << BIM <<endl;
+    cout << "BIM VALUES\n" ;
+    cout << "Underweight: less than 18.5 \n";
+    cout << "Normal: between 18.5 and 24.9 \n";
+    cout << "Overweight: between 25 and 29.9 \n";
+    cout << "Obese: 30 or greater \n" ;
+    return 0;
+}
+    
+  (2.31)
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    double mile ,price ,average ,park ,pass ;
+    double sum=0 ;
+    cin >> mile >> price >> average >> park >> pass ;
+    sum =( mile / average ) * price + park + pass ;
+    cout << sum << endl;
+    return 0;
+}
+
